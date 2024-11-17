@@ -1,0 +1,29 @@
+.vh-100 {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+  }
+  
+  h1 {
+    color: gold;
+  }
+  
+  p {
+    color: white;
+  }
+  
+  .btn-warning {
+    color: #121212;
+    background-color: gold;
+    border: none;
+  }
+  
+  .btn-warning:hover {
+    background-color: #ffd700;
+  }
+
+  img {
+    background-color: transparent;
+  }

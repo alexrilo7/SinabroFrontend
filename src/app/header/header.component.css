@@ -1,0 +1,53 @@
+body {
+    background-color: #121212;
+    /* Fondo oscuro */
+    color: white;
+    /* Color de texto */
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    background-color: #1e1e1e;
+    /* Fondo de la navbar */
+    border-bottom: 2px solid gold;
+    /* Borde dorado en la parte inferior */
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    /* Tamaño de fuente más grande para el nombre del club */
+    color: gold;
+    /* Color dorado para el nombre del club */
+    font-weight: bold;
+    /* Negrita para destacar */
+}
+
+.nav-link {
+    color: white;
+    /* Color blanco para los enlaces */
+    transition: color 0.3s;
+    /* Transición suave al pasar el mouse */
+}
+
+.nav-link:hover {
+    color: gold;
+    /* Color dorado al pasar el mouse */
+}
+
+.cta-button {
+    background-color: gold;
+    /* Color dorado para el botón de acción */
+    color: black;
+    /* Texto negro en el botón */
+    border-radius: 20px;
+    /* Esquinas redondeadas */
+    font-weight: bold;
+    /* Negrita para destacar */
+    transition: background-color 0.3s;
+    /* Transición suave */
+}
+
+.cta-button:hover {
+    background-color: #ffd700;
+    /* Dorado más brillante al pasar el mouse */
+}

@@ -1,0 +1,78 @@
+body {
+  background-color: #121212;
+  /* Fondo oscuro */
+  color: white;
+  /* Color del texto */
+}
+
+.container {
+  background-color: #121212;
+  /* Fondo oscuro para el contenedor */
+  border-radius: 10px;
+  /* Esquinas redondeadas */
+  padding: 20px;
+  /* Espaciado interno */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  /* Sombra para el contenedor */
+}
+
+.list-group-item {
+  background-color: #1e1e1e;
+  /* Fondo de los elementos de la lista */
+  color: white;
+  /* Color del texto */
+  border: 1px solid #333;
+  /* Borde oscuro */
+  transition: background-color 0.3s, transform 0.2s;
+  /* Transición suave */
+}
+
+.list-group-item:hover {
+  background-color: gold;
+  /* Color dorado al pasar el mouse */
+  transform: scale(1.02);
+  /* Efecto de aumento al pasar el mouse */
+}
+
+.partido-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  /* Espaciado interno */
+}
+
+.partido-fecha {
+  font-weight: bold;
+  /* Negrita para la fecha */
+}
+
+.partido-equipos {
+  font-size: 1.2rem;
+  /* Tamaño de fuente para los equipos */
+}
+
+.partido-details {
+  margin-top: 20px;
+  /* Espaciado superior */
+  padding: 15px;
+  background-color: #1e1e1e;
+  /* Fondo para detalles del partido */
+  border: 2px solid gold;
+  /* Borde dorado */
+  border-radius: 10px;
+  /* Esquinas redondeadas */
+}
+
+.partido-details a {
+  color: gold;
+  /* Color dorado para los enlaces */
+  text-decoration: underline;
+  /* Subrayado para los enlaces */
+  transition: color 0.3s;
+  /* Transición suave para color */
+}
+
+.partido-details a:hover {
+  color: #ffd700;
+  /* Color dorado más brillante al pasar el mouse */
+}

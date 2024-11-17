@@ -1,0 +1,38 @@
+<div class="container my-4">
+    <h2 class="text-center text-light">Ranking de Jugadores</h2>
+  
+    <!-- Controles para ordenar -->
+    <div class="d-flex justify-content-center my-3">
+      <button (click)="ordenarPor('valoracion')" class="btn btn-custom mx-2">Ordenar por Valoración</button>
+      <button (click)="ordenarPor('goles')" class="btn btn-custom mx-2">Ordenar por Goles</button>
+      <button (click)="ordenarPor('asistencias')" class="btn btn-custom mx-2">Ordenar por Asistencias</button>
+    </div>
+  
+    <!-- Tabla de jugadores -->
+    <div class="table-responsive">
+      <table class="table table-dark table-hover text-center">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Dorsal</th>
+            <th>Valoración</th>
+            <th>Goles</th>
+            <th>Asistencias</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let jugador of jugadoresOrdenados">
+            <td>{{ jugador.nombre }}</td>
+            <td>{{ jugador.apellidos }}</td>
+            <td>{{ jugador.dorsal }}</td>
+            <td>{{ jugador.valoracion }}</td>
+            <td>{{ jugador.goles }}</td>
+            <td>{{ jugador.asistencias }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <app-boton-volver-inicio></app-boton-volver-inicio>
+  </div>
+  

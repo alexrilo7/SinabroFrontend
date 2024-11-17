@@ -1,0 +1,59 @@
+<body>
+  <div class="container my-4">
+    <h1 *ngIf="equipo" class="text-center mb-4 text-light">Jugadores de {{ equipo.nombre }}</h1>
+    <ul class="list-group" *ngIf="equipo && equipo.jugadores.length > 0">
+      <li *ngFor="let jugador of equipo.jugadores" class="list-group-item">
+        <strong>{{ jugador.nombre }} {{ jugador.apellidos }}</strong> - Dorsal: {{ jugador.dorsal }}<br>
+
+        <form
+          (ngSubmit)="valorarJugador(jugador, jugadoresFormValues[jugador.id].valoracion, jugadoresFormValues[jugador.id].goles, jugadoresFormValues[jugador.id].asistencias)"
+          #votoForm="ngForm">
+
+          <!-- Valoración -->
+          <div class="form-group">
+            <label for="valoracion">Valoración</label>
+            <input type="number" id="valoracion" placeholder="Valoración"
+              [(ngModel)]="jugadoresFormValues[jugador.id].valoracion" name="valoracion" class="form-control" min="0"
+              max="10" required
+              [ngClass]="{'is-invalid': jugadoresFormValues[jugador.id].valoracion < 0 || jugadoresFormValues[jugador.id].valoracion > 10}" />
+            <div
+              *ngIf="jugadoresFormValues[jugador.id].valoracion < 0 || jugadoresFormValues[jugador.id].valoracion > 10"
+              class="invalid-feedback">
+              La valoración debe estar entre 0 y 10.
+            </div>
+          </div>
+
+          <!-- Goles -->
+          <div class="form-group">
+            <label for="goles">Goles</label>
+            <input type="number" id="goles" placeholder="Goles" [(ngModel)]="jugadoresFormValues[jugador.id].goles"
+              name="goles" class="form-control" min="0" required
+              [ngClass]="{'is-invalid': jugadoresFormValues[jugador.id].goles < 0}" />
+            <div *ngIf="jugadoresFormValues[jugador.id].goles < 0" class="invalid-feedback">
+              Los goles no pueden ser menores a 0.
+            </div>
+          </div>
+
+          <!-- Asistencias -->
+          <div class="form-group">
+            <label for="asistencias">Asistencias</label>
+            <input type="number" id="asistencias" placeholder="Asistencias"
+              [(ngModel)]="jugadoresFormValues[jugador.id].asistencias" name="asistencias" class="form-control" min="0"
+              required [ngClass]="{'is-invalid': jugadoresFormValues[jugador.id].asistencias < 0}" />
+            <div *ngIf="jugadoresFormValues[jugador.id].asistencias < 0" class="invalid-feedback">
+              Las asistencias no pueden ser menores a 0.
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-custom" [disabled]="votoForm.invalid">Valorar</button>
+        </form>
+
+      </li>
+    </ul>
+    <div *ngIf="equipo.jugadores.length === 0">
+      <p>Has votados a todos los jugadores correctamente para este partido! </p>
+    </div>
+    <app-boton-volver-inicio></app-boton-volver-inicio>
+  </div>
+  
+</body>

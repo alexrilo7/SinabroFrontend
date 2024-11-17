@@ -1,0 +1,36 @@
+.container {
+    background-color: #121212;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .btn-custom {
+    background-color: gold;
+    color: #121212;
+    border: none;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .btn-custom:hover {
+    background-color: #ffd700;
+    transform: scale(1.05);
+  }
+  
+  .table-dark {
+    background-color: #1e1e1e;
+  }
+  
+  .table-dark th, .table-dark td {
+    color: white;
+    border-color: #333;
+  }
+  
+  .table-hover tbody tr:hover {
+    background-color: gold;
+    color: black;
+    transform: scale(1.02);
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  

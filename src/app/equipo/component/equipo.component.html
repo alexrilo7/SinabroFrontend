@@ -1,0 +1,24 @@
+<body>
+  <div class="container my-4">
+    <h1 class="text-center mb-4 text-light">Calendario de Partidos</h1>
+
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="list-group">
+          <li *ngFor="let partido of partidos" class="list-group-item list-group-item-action partido-item"
+            (click)="selectPartido(partido)">
+            <div class="partido-info">
+              <span class="partido-equipos">{{ partido.equipoLocal.nombre }} vs {{ partido.equipoVisitante.nombre
+              }}</span>
+              <span class="partido-fecha">{{ partido.fecha | date:'fullDate' }}</span>              
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+   
+  </div>
+
+
+</body>

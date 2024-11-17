@@ -1,0 +1,11 @@
+/* boton-volver-inicio.component.css */
+.d-flex {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+  }
+  
+  button.btn-warning {
+    width: auto;  /* El ancho del botón es ajustado al contenido */
+    padding: 12px 24px;  /* Ajusta el padding si es necesario */
+    font-size: 18px;  /* Ajusta el tamaño de la fuente si es necesario */
+  }

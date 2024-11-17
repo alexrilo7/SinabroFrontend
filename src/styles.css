@@ -1,0 +1,50 @@
+body {
+    background-color: #121212;
+    /* Fondo oscuro para toda la página */
+    color: white;
+    /* Color del texto por defecto */
+    margin: 0;
+    /* Eliminar márgenes por defecto del body */
+    font-family: Arial, sans-serif;
+    /* Fuente por defecto */
+}
+html {
+    background-color: #121212;
+    /* Fondo oscuro para toda la página */
+    color: white;
+    /* Color del texto por defecto */
+    margin: 0;
+    /* Eliminar márgenes por defecto del body */
+    font-family: Arial, sans-serif;
+    /* Fuente por defecto */
+}
+.main-content {
+    padding: 20px;
+    /* Espaciado alrededor del contenido principal */
+}
+
+/* Estilos adicionales que ya se han aplicado en los componentes anteriores */
+.container {
+    background-color: #121212;
+    /* Fondo oscuro para los contenedores */
+    border-radius: 10px;
+    /* Esquinas redondeadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    /* Sombra para el contenedor */
+}
+
+h1,
+h2 {
+    color: gold;
+    /* Color dorado para encabezados */
+}
+
+.text-warning {
+    color: gold;
+    /* Color dorado para textos de advertencia */
+}
+
+.text-light {
+    color: white;
+    /* Color blanco para textos claros */
+}

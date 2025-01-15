@@ -10,9 +10,9 @@ import { VotoDTO } from '../model/voto-dto.model';
 export class JugadorService {
 
   constructor(private readonly http: HttpClient) { }
-  apiUrlVotar: string = 'http://localhost:8080/valorarJugador';
-  apiUrlGA: string = 'http://localhost:8080/golesYAsistencias';
-  apiUrlJugadores: string = 'http://localhost:8080/recuperarJugadores'
+  apiUrlVotar: string = 'https://sinabrobackend.onrender.com/valorarJugador';
+  apiUrlGA: string = 'https://sinabrobackend.onrender.com/golesYAsistencias';
+  apiUrlJugadores: string = 'https://sinabrobackend.onrender.com/recuperarJugadores'
   valorarJugador(voto: VotoDTO): Observable<VotoDTO> {
     const body =  {
       ...voto

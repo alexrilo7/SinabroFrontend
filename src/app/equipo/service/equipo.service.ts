@@ -9,9 +9,9 @@ import { Partido } from '../model/partido.model';
 })
 export class EquipoService {
   equipos: EquipoDTO[] = [];
-  apiUrlEquipos: string = 'http://localhost:8080/recuperarEquipos';
-  apiUrlEquipo: string = 'http://localhost:8080/recuperarEquipo';
-  apiUrlPartidos: string = 'http://localhost:8080/recuperarPartidos';
+  apiUrlEquipos: string = 'https://sinabrobackend.onrender.com/recuperarEquipos';
+  apiUrlEquipo: string = 'https://sinabrobackend.onrender.com/recuperarEquipo';
+  apiUrlPartidos: string = 'https://sinabrobackend.onrender.com/recuperarPartidos';
   constructor(private http: HttpClient) { }
 
   recuperarEquipos():Observable<EquipoDTO[]> {

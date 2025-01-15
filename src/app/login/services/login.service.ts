@@ -8,8 +8,8 @@ import { LoginResponse } from '../model/login-response.model';
   providedIn: 'root'
 })
 export class LoginService {
-  private apiUrl = 'http://localhost:8080/login'; // Cambia la URL según tu backend
-  private apiUrlRegistro = 'http://localhost:8080/registrarUsuario'; // Cambia la URL según tu backend
+  private apiUrl = 'https://sinabrobackend.onrender.com/login'; // Cambia la URL según tu backend
+  private apiUrlRegistro = 'https://sinabrobackend.onrender.com/registrarUsuario'; // Cambia la URL según tu backend
   private isLoggedIn = new BehaviorSubject<boolean>(false);
   isLoggedIn$ = this.isLoggedIn.asObservable();
   private usuario: LoginRequestDTO = {email: '', password: ''};

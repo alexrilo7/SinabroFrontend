@@ -33,6 +33,8 @@
           },
           "configurations": {
             "production": {
+              "outputPath": "dist/sinabro-front",
+             
               "budgets": [
                 {
                   "type": "initial",

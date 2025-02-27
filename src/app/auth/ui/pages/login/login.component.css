@@ -1,0 +1,75 @@
+    /* Estilo para ajustar los márgenes */
+    .input-group {
+        margin-bottom: 8px;
+        /* Pequeño espacio entre los campos */
+    }
+
+    /* Ajustar el margen superior del logo */
+    .logo-container {
+        margin-bottom: 20px;
+        /* Espacio entre el logo y el campo de usuario */
+    }
+
+    body {
+        background-image: url("src/assets/img/fondo.jpg");
+        background-size: cover;
+    }
+
+    /* Estilo para el footer */
+    footer {
+        text-align: right;
+        /* Alinear el texto a la derecha */
+        padding: 10px 20px;
+        /* Espaciado interno (10px arriba/abajo, 20px derecha/izquierda) */
+        background-color: rgba(33,
+                37,
+                41,
+                0.8);
+        /* Fondo oscuro semitransparente */
+        border-top: 1px solid rgba(73, 80, 87, 0.8);
+        /* Borde superior semitransparente */
+        margin-top: 20px;
+        /* Margen superior */
+        font-size: 0.875rem;
+        /* Tamaño de fuente más pequeño */
+        color: #ffffff;
+        /* Color del texto claro */
+    }
+
+    /* Evitar que el texto del footer se divida en varias líneas */
+    footer p {
+        white-space: nowrap;
+        /* Texto en una sola línea */
+        margin: 0;
+        /* Eliminar margen predeterminado */
+    }
+
+    /* Estilo para el contenedor del formulario */
+    .contenedor-formulario {
+        background-color: rgba(52,
+                58,
+                64,
+                0.8);
+        /* Fondo oscuro semitransparente */
+        color: #ffffff;
+        /* Texto claro */
+        border-radius: 0.5rem;
+        /* Bordes redondeados */
+        padding: 20px;
+        /* Espaciado interno */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        /* Sombra */
+    }
+
+    /* Estilo para el enlace "¿Olvidaste tu contraseña?" */
+    .enlace-contraseña {
+        color: #007bff;
+        /* Color azul para el enlace */
+        text-decoration: none;
+        /* Sin subrayado */
+    }
+
+    .enlace-contraseña:hover {
+        text-decoration: underline;
+        /* Subrayado al pasar el mouse */
+    }
